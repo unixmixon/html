@@ -1,0 +1,87 @@
+/* main styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Comic Sans MS;
+}
+
+header {
+  text-align: center;
+}
+
+.container {
+  padding: 5px;
+}
+
+.container:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.block {
+  border: 1px solid #000;
+  /*margin: 10px 10px 0;*/
+  margin: 5px;
+  padding: 30px 10px 10px;
+  position: relative;
+  background: #999999;
+}
+
+.block span {
+  border: 1px solid black;
+  padding: 3px;
+  position: absolute;;
+  top: -1px;
+  right: -1px;
+}
+
+.chicken .block span {
+  background-color: #d49899;
+}
+
+.beef .block span {
+  background-color: #bf4646;
+  color: #fff;
+}
+
+.sushi .block span {
+  background-color: #e4d09b;
+}
+
+/* desktop */
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 33.3333%;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6,
+  .col-md-12 {
+    float: left;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/* mobile */
+
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    width: 100%;
+  }
+}
