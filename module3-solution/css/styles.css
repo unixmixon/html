@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background: #c9c9c9;
+  }
+}
+
+.navbar-collapse .navbar-nav>li>a {
+  color: #fff;
+}
+
+section .panel {
+  background-color: #c9c9c9;
+}
+
+#chicken, #beef, #sushi {
+  animation: width 3s linear;
+}
